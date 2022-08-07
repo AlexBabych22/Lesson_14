@@ -1,0 +1,542 @@
+@mixin fontz ($ff, $fst, $fw, $fs, $lh, $c) {
+    font-family: $ff;
+    font-style: $fst;
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: $lh;
+    color: $c;
+}
+
+
+
+*{
+    @include fontz ('Inter', normal, 400, 18px, 28px, #374151);
+}
+
+.mr-16{
+    margin-right: 16px;
+}
+
+.second_block{
+    background-image: url(../img/Hero_03_sm.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: cover;
+   @media screen and (min-width: 767px) {
+    background-image: url(../img/Hero_md.png);
+    background-size: cover;
+    background-position: top right;
+   }
+   @media screen and (min-width: 991px) {
+    background-image: url(../img/Background.png);
+    background-size: cover;
+    background-position: top center;
+   }
+}
+
+.button-180{
+    width: 135px !important;
+    height: 40px !important;
+    background: #000000 ;
+}
+
+.container_padding{
+    max-width: 1440px;
+    min-width: 375px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: auto;
+    @media screen and (min-width:768px) {
+        margin: auto;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    @media screen and (min-width:1200px) {
+        margin: auto;
+        padding-left: 112px;
+        padding-right: 112px;
+    }
+}
+
+.container_margin{
+    max-width: 1440px;
+    min-width: 375px;
+    margin-left: 20px;
+    margin-right: 20px;
+    @media screen and (min-width:768px) {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    @media screen and (min-width:1200px) {
+        margin-left: 112px;
+        margin-right: 112px;
+    }
+}
+
+.width-img{
+    width: 20px;
+    height: 20px;
+    margin-right: 6px;
+}
+
+.text-menu{
+    @include fontz ('Inter', normal, 600, 14px, 20px, #111827);
+}
+
+.h1-text{
+    @include fontz ('Inter', normal, 700, 36px, 45px, #111827);
+    padding-bottom: 16px;
+    @media screen and (min-width:768px) {
+        @include fontz ('Inter', normal, 700, 48px, 60px, #111827);
+    }
+    @media screen and (min-width:1200px) {
+        @include fontz ('Inter', normal, 700, 60px, 72px, #111827);
+    }
+} 
+.h4-text{
+    @include fontz ('Inter', normal, 700, 36px, 45px, #111827); 
+}
+
+.p-text-16{
+    @include fontz ('Inter', normal, 400, 16px, 24px, #111827); 
+}
+
+
+.mobile-info{
+    margin-top: 56px;
+    margin-bottom: 110px;
+    @media screen and (min-width:768px) {
+        margin-bottom: 96px;
+        margin-top: 100px;
+    }
+    @media screen and (min-width:1200px) {
+        margin-bottom: 90px;
+        margin-top: 92px;
+    }
+    &__text {
+        min-width: 335px;
+        padding-top: 52px;
+        @media screen and (min-width:768px) {
+            padding-top: 96px;
+            max-width: 688px;}
+        @media screen and (min-width:1200px) {
+            width: 648px;}
+        }
+    &_content{
+        padding-bottom: 80px;
+    }
+}
+
+.icon-Group-31{
+    margin-left: 28px;
+}
+.btn-color{
+    background-color: #7C3AED;
+    @include fontz ('Inter', normal, 600, 16px, 24px, #FFFFFF);
+    padding: 16px 24px;
+    &_text{
+        @include fontz ('Inter', normal, 600, 16px, 24px, #7C3AED);
+        padding: 16px 24px;
+        margin-left: 20px;
+    }
+}
+
+.second-section{
+    gap: 64px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    @media screen and (min-width:815px) {
+        row-gap: 64px;
+        column-gap: 180px;
+    }
+    @media screen and (min-width:1200px) {
+        gap: 64px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+
+.h2-text{
+    @include fontz ('Inter', normal, 700, 30px, 40px, #111827);
+    @media screen and (min-width:992px) {
+        @include fontz ('Inter', normal, 700, 48px, 60px, #111827);
+    }
+}
+.z-index-2{
+    z-index: 2;
+}
+
+.text_bg{
+        background-image: url(../img/“.svg);
+        background-repeat: no-repeat;
+        background-position: top left;
+        background-size: 16px 13px;
+}
+
+.pt-120{
+    padding-top: 80px;
+    @media screen and (min-width:768px) {
+        padding-top: 120px;
+    }
+}
+.pt-20{
+    padding-top: 20px;
+    @media screen and (min-width:992px) {
+        padding-top: 40px;
+    }
+}
+
+
+.position__img{
+    opacity: 30%;
+    width: 96px;
+    height: 78px;
+    left: -8px;
+    top: 50px;
+    @media screen and (min-width:768px) {
+        width: 142px;
+        height: 116px;
+        left: -20px;
+        top: 56px;
+    }
+    @media screen and (min-width:1200px) {
+        left: -112px;
+        top: 64px;
+    }
+}
+.third-section{
+    padding-top: 64px;
+    padding-bottom: 48px;
+    @media screen and (min-width:768px) {
+        padding-top: 96px;
+        padding-bottom: 80px;
+    }
+    @media screen and (min-width:1200px) {
+        padding-top: 112px;
+        padding-bottom: 96px;
+    }
+
+    &_text{
+        max-width: 335px;
+        @media screen and (min-width:768px) {
+            max-width: 688px;
+        }
+        @media screen and (min-width:1200px) {
+            max-width: 800px;
+        }
+    }
+}
+
+.h3-text{
+    @include fontz ('Inter', normal, 700, 24px, 32px, #111827);
+    @media screen and (min-width:1200px) {
+        @include fontz ('Inter', normal, 700, 30px, 40px, #111827);
+    }
+}
+
+.padding-center{
+    @media screen and (min-width:992px) {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+.padding-md-right{
+    @media screen and (min-width:768px) {
+        padding-right: 15px;
+    }
+}
+
+.padding-md-left{
+    @media screen and (min-width:768px) {
+        padding-left: 15px;
+    }
+}
+
+.icon-block{
+        max-width: 335px;
+    @media screen and (min-width:768px) {
+        max-width: 100%;
+    }
+    &_paddint-top{
+        padding-top: 48px;
+        @media screen and (min-width:768px) {
+            padding-top: 64px;
+        }
+    }
+}
+
+.text-p-color{
+    margin-left: 32px;
+    color:  #111827;
+    &_blod{
+        font-weight: 700;
+    }
+    &_none{
+        margin-left: 0;
+    }
+    &_new{
+        @include fontz ('Inter', normal, 500, 18px, 28px, #111827);
+    }
+}
+.text-footer{
+    @include fontz ('Inter', normal, 400, 16px, 24px, #ffffff !important);
+}
+.p-footer{
+    @include fontz ('Inter', normal, 400, 14px, 20px, #D1D5DB);
+}
+.h4-footer{
+    @include fontz ('Inter', normal, 500, 18px, 28px, #D1D5DB);
+}
+
+.btn-border{
+    border: 1px solid #ffffff;
+}
+
+
+.p{
+    &-45{
+        padding: 2rem !important;
+    }
+    &l-45{
+        padding-left: 2rem !important;
+    }
+    &r-45{
+        padding-right: 2rem !important;
+    }
+    &t-45{
+        padding-top: 2rem !important;
+    }
+    &b-45{
+        padding-bottom: 2rem !important;
+    }
+}
+
+.padding-img{
+    padding-top: 24px;
+    padding-bottom: 24px;
+    @media screen and (min-width:992px) {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+}
+.mt-lg-196px{
+    @media screen and (min-width:992px) {
+        margin-top: 196px;
+    }
+}
+.mt-48{
+    margin-top: 48px;
+    @media screen and (min-width:768px) {
+        margin-top: 80px;
+    }
+}
+.pt-48{
+    padding-top: 48px;
+    @media screen and (min-width:768px) {
+        padding-top: 80px;
+    }
+} 
+.mt-col-32{
+    margin-top: 32px;
+    @media screen and (min-width:768px) {
+        margin-top: 0;
+    }
+}
+.pt-40{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    @media screen and (min-width:768px) {
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+}
+
+.mt-174{
+    margin-top: 40px;
+    @media screen and (min-width:768px) {
+    margin-top: 174px;}
+}
+.m-48{
+    margin-top: 48px;
+    padding-bottom: 48px;
+    @media screen and (min-width:768px) {
+        margin-top: 80px;
+        padding-bottom: 80px;
+    }
+}
+
+.mt-md-48{
+    margin-top: 32px;
+    @media screen and (min-width:768px) {
+        margin-top: 48px;
+    }
+    @media screen and (min-width:992px) {
+        margin-top: 0;
+    }
+
+}
+
+.pt-lg-none{
+    @media screen and (min-width:992px) {
+        padding-top: 0;
+    }
+}
+
+.height_img{
+    height: 100%;
+}
+
+.mt-md-ms-48{
+    margin-top: 48px;
+    @media screen and (min-width:768px) {
+        margin-top: 0px;
+    }
+}
+
+.mb-lg-80{
+    @media screen and (min-width:768px) {
+        margin-bottom: 80px;
+    }
+}
+.mb-48{
+    margin-bottom: 48px;
+    @media screen and (min-width:768px) {
+        margin-bottom: 80px;
+    }
+}
+
+.gap-40{
+    row-gap: 40px;
+}
+.gap-64px{
+    gap: 40px;
+    @media screen and (min-width:540px) {
+        column-gap: 75px;
+    }
+    @media screen and (min-width:768px) {
+        gap: 40px;
+    }
+    @media screen and (min-width:1200px) {
+        gap: 64px;
+    }
+}
+
+.mb-block{
+    margin-bottom: 48px;
+    @media screen and (min-width:768px) {
+        margin-bottom: 80px;
+    }
+    @media screen and (min-width:1200px) {
+        margin-bottom: 96px;
+    }
+}
+
+.m-32{
+    margin-left: 32px;
+}
+.mb-32{
+    margin-bottom: 32px;
+}
+
+.row__none{
+    --bs-gutter-x: 0;
+    --bs-gutter-y: 0;
+    @media screen and (min-width:992px) {
+        --bs-gutter-x: 1.5rem;
+        --bs-gutter-y: 0;
+    }
+}
+
+
+.m{
+    &-45{
+        margin: 2rem !important;
+    }
+    &l-45{
+        margin-left: 2rem !important;
+    }
+    &r-45{
+        margin-right: 2rem !important;
+    }
+    &t-45{
+        margin-top: 2rem !important;
+    }
+    &b-45{
+        margin-bottom: 2rem !important;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .p{
+        &-lg-45{
+            padding: 2rem !important;
+        }
+        &l-lg-45{
+            padding-left: 2rem !important;
+        }
+        &r-lg-45{
+            padding-right: 2rem !important;
+        }
+        &t-lg-45{
+            padding-top: 2rem !important;
+        }
+        &b-lg-45{
+            padding-bottom: 2rem !important;
+        }
+    }
+    
+    .m{
+        &-lg-45{
+            margin: 2rem !important;
+        }
+        &l-lg-45{
+            margin-left: 2rem !important;
+        }
+        &r-lg-45{
+            margin-right: 2rem !important;
+        }
+        &t-lg-45{
+            margin-top: 2rem !important;
+        }
+        &b-lg-45{
+            margin-bottom: 2rem !important;
+        }
+    }
+}
+
+.bg-blue-new{
+    background-color: #D5FAFC;
+}
+
+.bg_spruce-color{
+    background-color: #1DB5BE;
+}
+
+.bg-img-circle{
+    background-image: url(../img/circle.svg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: contain;
+    margin-top: 36px;
+    @media screen and (min-width:768px) {
+        margin-top: 0;
+    }
+    .icon_size{
+        width: 40px;
+        height: 40px;
+        @media screen and (min-width:768px) {
+            width: 38px;
+            height: 38px;
+        }
+        @media screen and (min-width:992px) {
+            width: 64px;
+            height: 64px;
+        }
+    }
+}
+
+// .background-color-img{
+//     background-image:url(../img/“.svg);
+// }
